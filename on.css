@@ -1,0 +1,598 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/63/24/3a/63243aacfe563f25e472f9e187723df1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkred;
+    transition: 0.05s;
+    z-index: 1000;
+}
+header.sticky{
+    background: darkblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+header .logo{
+    position: relative;
+    color: orange;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: arial;
+    margin-left: 20px;
+}
+header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -50px;
+}
+header ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: cursive;
+}
+header ul li a:hover {
+    background: lightblue;
+    color: blue;
+    box-shadow: 0 0 10px lightblue;
+}
+header .action .searchBx {
+    padding: 5px;
+    margin: 10px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+header .action .searchBx i {
+    font-size: 24px;
+    margin: 5px;
+    color: black
+}
+header .action .searchBx input {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: black
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+    margin: 50px;
+}
+.banner .bg .content p{
+    font-family: cursive;
+    font-size: 20px;
+    color: red;
+    letter-spacing: 1px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid lightblue;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+.banner .bg .content a:hover{
+    background: lightblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px lightblue;
+}
+.banner .bg img{
+    width: 600px;
+    border-radius: 50px;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+.about .contentBx h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: blue;
+    font-family: cursive;
+}
+.about p{
+    max-width: 600px;
+    text-align: justify;
+    color: blue;
+    font-family: cursive;
+    font-size: 16px;
+}
+.about img{
+    margin-right: 12%;
+}
+.about .contentBx a{
+display: inline-block;
+padding: 10px 20px;
+margin: 20px 0;
+border: 1px solid lightblue;
+text-decoration: none;
+font-weight: 700;
+border-radius: 5px;
+color: white;
+letter-spacing: 1px;
+font-family: cursive ;
+}
+.about .contentBx a:hover {
+    background: lightblue;
+    border: none;
+    color: red;
+    box-shadow: 0 0 10px lightblue;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.nav-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.nav-icon:hover {
+    transform: scale(1.1);
+}
+
+.games{
+    padding: 70px 50px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.games h1{
+    color: violet;
+    margin: 20px 0;
+    font-family: cursive;
+    margin-right: 8%;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+.games .nav-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.games .nav-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.games .icon-text {
+    margin-top: 5px;
+    color: violet;
+    font-family: cursive;
+}
+.games .navigation img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.games .line {
+    border-top: 5px solid purple;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-right: 9%;
+    border-radius: 50px;
+}
+.games ul li:active{
+    background: lightblue;
+    color: black;
+    box-shadow: 0 0 10 lightblue;
+}
+.games .cardBx{
+    width:100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 110px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.games .cardBx .card {
+    width: 160px;
+    border-radius: 15px;
+    margin: 20px 20px;
+    background: purple;
+    overflow: hidden;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.5s ease forwards;
+}
+.games .cardBx .card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.games .cardBx .card .content{
+    padding: 10px;
+}
+.games .cardBx .card  h3{
+    color: black;
+    margin: 15px 0;
+    font-family: cursive;
+}
+.games .cardBx .card p{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 10px;
+}
+.games .cardBx .card .info p{
+    font-size: 12px;
+    color:black;
+    font-family: cursive;
+    font-weight: 500;
+}
+.games .cardBx .card .info p span{
+    color: lightblue;
+    font-size: 12px;
+}
+.games .cardBx .card .hide{
+    display: none;
+}
+.card.hide {
+    display: none;
+}
+.card.active {
+    display: block;
+}
+
+.videos{
+    padding: 70px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.videos h1{
+    color: greenyellow;
+    margin: 20px 0;
+    margin-right: 15%;
+    font-family: cursive;
+}
+.videos .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    margin-top: 20px;
+}
+.videos .boxBx .box{
+    width: 245px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: green;
+    overflow: hidden;
+}
+.videos .boxBx .box img{
+    width: 110px;
+    height: 90px;
+    object-fit: cover;
+    margin: 5px;
+}
+.videos .boxBx .box .content{
+    padding:  5px;
+    margin-left: 10px;
+}
+.videos .boxBx .box .content h4{
+    color: lightgreen;
+    margin-top: 5px;
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    padding: 70px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contact .form{
+    width: 50%;
+    margin: 30px;
+}
+.contact .form h1{
+    color: yellow;
+    font-family: cursive;
+}
+.contact .form .inputBx{
+    margin: 10px 0;
+}
+.contact .form p{
+    color: yellow;
+    font-family: cursive;
+}
+.contact .form
+input, .contact .form  textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: black;
+    background: white;
+    min-height: 15px;
+    font-size: 1.1em;
+}
+.contact .form .inputBx textarea{
+    height: 150px;
+}
+#submitBtn {
+    background-color: yellow;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: cursive;
+    font-weight: bold;
+}
+#submitBtn:hover {
+    background-color: yellowgreen;
+}
+
+footer{
+    padding: 10px 100px;
+}
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info .logo{
+    position: relative;
+    color: pink;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: cursive;
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightblue;
+    background-color: pink;
+}
+footer .info ul li:hover{
+    background: lightblue;
+    border: none;
+    box-shadow: 0 0 10px lightblue;
+}
+
+.search-results {
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    width: 190px;
+    background-color: black;
+    z-index: 999;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    max-height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.search-result {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    border-color: black;
+    overflow: hidden;
+    padding: -10px;
+    width: 180px;
+}
+.search-result img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.search-result .content {
+    padding: 6px;
+}
+.search-result h3 {
+    margin-top: -6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    color: white;
+}
+.search-result p {
+    margin-bottom: 10px;
+    font-family: cursive;
+    font-size: 10px;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .banner .bg .content {
+        width: 80%;
+    }
+
+    .about .contentBx {
+        width: 80%;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact .form {
+        width: 100%;
+    }
+
+    .videos h1 {
+        margin-right: 0;
+    }
+
+    .videos .boxBx .box {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header .nav {
+        margin-right: -110px;
+    }
+    header .action{
+        margin-right: -20px;
+    }
+    .about .contentBx {
+        width: 45%;
+    }
+    .contact img {
+        width: 50%;
+    }
+    .contact .form {
+        width: 50%;
+    }
+    .videos h1 {
+        margin-right: 15%;
+    }
+    .videos .boxBx .box {
+        margin: 20px 40px;
+    }
+}
+@keyframes cardAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+.card.animate-card {
+    animation: cardAnimation 0.5s ease forwards;
+}
+
